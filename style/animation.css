@@ -1,0 +1,76 @@
+@keyframes color-change {
+  0% {
+    border-color: red;
+    background-color: gold;
+  }
+  25% {
+    border-color: gold;
+    background-color: blue;
+  }
+  50% {
+    border-color: blue;
+    background-color: red;
+  }
+  75% {
+    border-color: lightcyan;
+    background-color: darkslategrey;
+  }
+  100% {
+    border-color: darkslategrey;
+    background-color: gold;
+  }
+}
+
+.jello-horizontal {
+  animation: jello-horizontal 0.9s both;
+}
+@keyframes jello-horizontal {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.shake-vertical {
+  animation: shake-vertical 0.9s both;
+}
+@keyframes shake-vertical {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    transform: translateY(-8px);
+  }
+  20%,
+  40%,
+  60% {
+    transform: translateY(8px);
+  }
+  80% {
+    transform: translateY(6.4px);
+  }
+  90% {
+    transform: translateY(-6.4px);
+  }
+}

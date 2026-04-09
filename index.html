@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kanoe</title>
+    <link rel="stylesheet" href="./style/animation.css" />
+    <style>
+      body {
+        height: 100vh;
+        margin: 0;
+        animation: color-change 5s linear infinite;
+
+        display: flex;
+        flex-direction: column;
+        gap: 3vh;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .img-container {
+        width: 75vw;
+        height: 80vh;
+      }
+
+      .img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+
+      .bar {
+        width: 9vw;
+        height: 2vh;
+
+        border: 1px solid #96d5ff;
+      }
+
+      .bar__filler {
+        width: 0vw;
+        height: inherit;
+        background-color: #96d5ff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="img-container" id="yippee-img-container">
+      <img src="./asset/image/0.png" class="img" id="yippee-img" />
+    </div>
+    <div class="bar" id="sound-progress-bar">
+      <div class="bar__filler" id="sound-progress-bar-filler"></div>
+    </div>
+  </body>
+  <script type="module" src="./src/main.js"></script>
+</html>
