@@ -1,11 +1,11 @@
 import { triggerRandomAnimation } from "./animation-trigger.js";
 import ShortSoundPlayer from "./short-sound-player.js";
-import cft from "../node_modules/canvas-confetti/dist/confetti.module.mjs";
+import cft from "/node_modules/canvas-confetti/dist/confetti.module.mjs";
 import randInt from "./rand-int.js";
 import SoundProgressBar from "./sound-progress-bar.js";
 
-const IMAGE_ROOT = "../asset/image/";
-const SOUND_ROOT = "../asset/sound/";
+const IMAGE_ROOT = "/asset/image/";
+const SOUND_ROOT = "/asset/sound/";
 const IMAGE_COUNT = 12;
 const SOUND_COUNT = 100;
 
