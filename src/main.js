@@ -21,9 +21,9 @@ imgContainer.addEventListener("click", async () => {
     const randSound = SOUND_ROOT + randInt(0, SOUND_COUNT - 1) + ".mp3";
 
     imgContainer.firstElementChild.src = randImg;
-    progressBar.start(soundPlayer.queryBufferLength(randSound));
     triggerRandomAnimation(imgContainer);
     cft();
 
     await soundPlayer.play(randSound);
+    progressBar.start(soundPlayer.queryBufferLength(randSound));
 });
