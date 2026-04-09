@@ -4,8 +4,8 @@ import cft from "../node_modules/canvas-confetti/dist/confetti.module.mjs";
 import randInt from "./rand-int.js";
 import SoundProgressBar from "./sound-progress-bar.js";
 
-const IMAGE_ROOT = "kanoee/asset/image/";
-const SOUND_ROOT = "kanoee/asset/sound/";
+const IMAGE_ROOT = "/kanoee/asset/image/";
+const SOUND_ROOT = "/kanoee/asset/sound/";
 const IMAGE_COUNT = 12;
 const SOUND_COUNT = 100;
 
